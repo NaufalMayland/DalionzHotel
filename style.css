@@ -134,18 +134,23 @@ a{
 /*Page About*/
 #about{
     display: flex;
-    background: #f5971b;
+    background: #333;
 }
 #about .abinfo p{
     text-align: justify;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #f1f1f1;
 }
 #about .abinfo{
     padding: 40px;
 }
-
+#about h1{
+    color: #fff;
+}
 #about .imghtl img{
     float: left;
-    width: auto;
+    width: 420px;
 
 }
 #about .text1{
