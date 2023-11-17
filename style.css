@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+@font-face{
+    font-family: 'Fortune';
+    src : url(font/Fortune.otf);
+}
+@font-face {
+    font-family: 'Gruno';
+    src: url(font/GrunoTrial.otf);
+}
+@font-face {
+    font-family: 'Zasline';
+    src: url(font/Zasline.otf);
+}
+@font-face {
+    font-family: 'Magnify-Bold';
+    src: url(font/Magnify-Bold.ttf);
+}
+@font-face {
+    font-family: 'Magnify-BoldItalic';
+    src: url(font/Magnify-BoldItalic.ttf);
+}
+@font-face {
+    font-family: 'Rugen';
+    src: url(font/RugenExpanded.ttf);
+}
+
+body{
+    font-family: Poppins, sans-serif;
+    background-color: #fff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+a{
+    text-decoration: none;
+}
+
+/*Navbar Style*/
+.navbar{
+    background-color: #333;
+    color: #fff;
+    overflow: auto;
+    max-width: 100%;
+    margin: auto;
+    padding: 11px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+    width: 100%;
+}
+.link a{
+    color: #fff;
+    position: relative;
+    padding-bottom: 2px;
+}
+.navbar h1{
+    font-family: Rugen;
+    font-size: 33px;
+    color: #f5971b;
+    letter-spacing: -3px;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    align-items: center;
+    font-size: 14px;
+}
+.navbar ul li{
+    float: left;
+}
+.navbar ul li a{
+    display: block;
+    text-align: center;
+}
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+.link a:hover::after{
+    width: 100%;
+}
+.reg{
+    font-size: 12px;
+    background-color: #f5971b;
+    padding: 7px 12px;
+    color: #fff;
+    border-radius: 5px;
+}
+.reg:hover{
+    background-color: #fff;
+    color: #f5971b;
+}
+
+/*Page Home*/
+#home{
+    background: url('img/pexels-pixabay-164595.jpg')no-repeat center center/cover;
+    height: 630px;
+}
+#home .show{
+    color: #fff;
+    text-align: center;
+    padding-top: 290px;
+    line-height: 37px;
+}
+.well{
+    font-family: Fortune;
+    font-size: 100px;
+    color: #ff9c1b;
+}
+.well1{
+    font-family: Poppins;
+    font-size: 70px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+#home .show p{
+    font-size: 14px;
+}
+
+/*Page About*/
+#about{
+    display: flex;
+    background: #f5971b;
+}
+#about .abinfo p{
+    text-align: justify;
+}
+#about .abinfo{
+    padding: 40px;
+}
+
+#about .imghtl img{
+    float: left;
+    width: auto;
+
+}
+#about .text1{
+    color: #f5971b;
+}
+
+/*Page Fasilitas*/
+#fasilitas{
+    margin: 10px auto;
+    padding: 0 10%;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+#fasilitas h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.fasil{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+.box{
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px; 
+    border-style: solid;
+    border-width: thin;
+    transition: all .15s ease;
+}
+.box img{
+    height: 55px;
+}
+.box h3{
+    color: #000;
+    font-size: 18px;
+}
+.box p{
+    font-size: 12px;
+    color: #333;
+    line-height: 1.4;
+    text-align: center;
+}
+.box:hover{
+    transform: scale(1.03);
+    border-color: #f5971b;
+    box-shadow: 0px 5px 10px rgba(219, 124, 35, 0.2);
+}
+@media (max-width:770px){
+    #fasilitas{
+        padding: 20px;
+    }
+
+}
+
+/*Room*/
+#kamar{
+    padding: 40px;
+}
+/*tipe bronze*/
+#kamar .bronze{
+    background-color: #fafafa;
+    width: auto;
+    padding: 30px;
+    border-radius: 7px;
+    font-size: 14px;
+    display: flex;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+#kamar .imgroom{
+    width: 250px;
+    float: left;
+    border-radius: 5px;
+}
+#kamar .roominfo{
+    margin-left: 20px;
+}
+#kamar .roominfo h2{
+    color: #f5971b;
+}
+/*tipe silver*/
+#kamar .silver{
+    background-color: #fafafa;
+    width: auto;
+    padding: 30px;
+    border-radius: 7px;
+    font-size: 14px;
+    display: flex;
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+#kamar .imgroom1{
+    width: 250px;
+    float: left;
+    border-radius: 5px;
+}
+#kamar .roominfo1{
+    margin-left: 20px;
+}
+#kamar .roominfo1 h2{
+    color: #f5971b;
+}
+/*tipe gold*/
+#kamar .gold{
+    background-color: #fafafa;
+    width: auto;
+    padding: 30px;
+    border-radius: 7px;
+    font-size: 14px;
+    display: flex;
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+#kamar .imgroom2{
+    width: 250px;
+    float: left;
+    border-radius: 5px;
+}
+#kamar .roominfo2{
+    margin-left: 20px;
+}
+#kamar .roominfo2 h2{
+    color: #f5971b;
+}
+
+/*footer*/
+#contact{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+#contact .text3{
+    color: #f5971b;
+}
+#contact .bawah{
+    font-size: 12px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 25% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+}

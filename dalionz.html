@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+    <title>Dalionz Hotel</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">Dlz</h1>
+        <ul>
+            <li class="link"><a href="#home">Home</a></li>
+            <li class="link"><a href="#about">About</a></li>
+            <li class="link"><a href="#fasilitas">Facility</a></li>
+            <li class="link"><a href="#kamar">Room</a></li>
+            <li class="link"><a href="#contact">Contact</a></li>
+            <li><a class="reg" onclick="register()">Sign-up</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <div class="show">
+            <h1 class="well">welcome to</h1>
+            <h1 class="well1">Dalionz Hotel</h1>
+            <p>- Harga biasa saja, Kualitasnya luar biasa -</p>
+        </div>
+    </section>
+    <section id="about">
+        <div class="abinfo">
+            <h1><span class="text1">About</span> Dalionz Hotel</h1>
+            <p>Dalionz Hotel, diambil dari kata medali. Medali merupakan simbol kemenangan. Mengambil jalan yang berbeda dari kebanyakan hotel lainnya, Hotel Dalionz bangga menjadi hotel mandiri dan kami fokus pada masa depan kami. Budaya kami memandu tindakan kami terhadap layanan kami. Kami percaya bahwa setiap individu adalah unik, oleh karena itu kami menghargai setiap ekspresi dan aspirasi sebagai kontribusi untuk melayani Anda dengan lebih baik. Apakah Anda sedang berbisnis atau berlibur, suite mewah kami, interior yang penuh inspirasi, fasilitas canggih, dan fasilitas yang bijaksana akan menciptakan pengalaman hidup harmonis yang tak terlupakan. Dirancang oleh para pemikir paling kreatif dalam profesinya, dibangun oleh orang-orang terbaik di industri ini, dan dikelola oleh para pelaku bisnis perhotelan yang paling bersemangat, kami akhirnya memulai perjalanan kami untuk melayani Anda.</p>
+        </div>
+        <div class="imghtl">
+            <img src="img/dalionzhotel.jpeg" alt="hotel">
+        </div>
+    </section>
+    <section id="fasilitas">
+        <h1>FASILITAS</h1>
+        <div class="fasil">
+
+            <div class="box">
+                <img src="img/front-car.png" alt="">
+                <h3>Area Parkir</h3>
+                <p>Area parkir yang aman, nyaman dan luas. Jadi anda tidak perlu khawatir dengan kendaraan anda.</p>
+            </div>
+            <div class="box">
+                <img src="img/smoking.png" alt="">
+                <h3>Smoking Area</h3>
+                <p>Disediakan tempat/ruangan untuk para perokok, supaya asap rokok tidak mengganggu pengunjung lain.</p>
+            </div>
+            <div class="box">
+                <img src="img/elevator.png" alt="">
+                <h3>Elevator</h3>
+                <p>Elevator dengan ruangan lebar yang bisa mengangkut cukup banyak orang & barang-barang.</p>
+            </div>
+            <div class="box">
+                <img src="img/swimming.png" alt="">
+                <h3>Kolam Renang</h3>
+                <p>Kolam renang dengan air jernih dan bersih. Kolam renang disini dilengkapi fasilitas yang cukup seperti pelampung, pengaman, tiang pegangan, dan papan loncat.</p>
+            </div>
+            <div class="box">
+                <img src="img/weight.png" alt="" height="800px">
+                <h3>Gym</h3>
+                <p>Ruangan untuk kegiatan olahraga dengan fasilitas yang lengkap, mulai dari dumbbell, treadmill, cable machine, dan masih banyak lagi.</p>
+            </div>
+            <div class="box">
+                <img src="img/restaurant.png" alt="">
+                <h3>Dalionz Delivery</h3>
+                <p>Sistem antar makanan yang dilakukan pelayan restoran ke tempat/kamar anda. Dalionz Delivery bisa anda akses dengan cara menuliskan pesanan melalui WhatsApp Dalionz Delivery.</p>
+            </div>
+        </div>
+    </section>
+    <section id="kamar">
+        <h1><span class="text2">Room</span> Type</h1>
+        <div class="bronze">
+            <div>
+                <img src="img/tipebronze.jpeg"  class="imgroom">
+            </div>
+            <div class="roominfo">
+                <h2>Tipe Bronze</h2>
+                <p></p>
+                <input type="submit" value="Booking" onclick="openPopup()">
+            </div>
+        </div>
+        <div class="silver">
+            <div>
+                <img src="img/tipesilver.jpeg" class="imgroom1">
+            </div>
+            <div class="roominfo1">
+                <h2>Tipe Silver</h2>
+                <p>aknfpinaf</p>
+                <input type="submit" value="Booking" onclick="openPopup()">
+            </div>
+        </div>
+        <div class="gold">
+            <div>
+                <img src="img/tipegold.jpeg" class="imgroom2">
+            </div>
+            <div class="roominfo2">
+                <h2>Tipe Gold</h2>
+                <p>aknfpinaf</p>
+                <input type="submit" value="Booking" onclick="openPopup()">
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <h3><span class="text3">Dalionz</span>Hotel.</h3>
+        <div class="bawah">
+            <p>copyright©2007 Yogyakarta</p>
+        </div>
+    </footer>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div class="bbronze">
+                <div class="kpl">
+                    <h2>BOOKING</h2>
+                </div>
+                <br>
+                <table>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
