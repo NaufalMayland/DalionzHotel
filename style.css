@@ -62,7 +62,7 @@ a{
 }
 .navbar h1{
     font-family: Rugen;
-    font-size: 33px;
+    font-size: 30px;
     color: #f5971b;
     letter-spacing: -3px;
 }
@@ -99,11 +99,34 @@ a{
     padding: 7px 12px;
     color: #fff;
     border-radius: 5px;
+    width: 75px;
 }
 .reg:hover{
     background-color: #fff;
     color: #f5971b;
 }
+@media (max-width:770px){
+    .navbar ul{
+        font-size: 13px;
+        gap: 38px;
+    }
+    .navbar h1{
+        font-size: 29px;
+    }
+}
+@media (max-width:600px){
+    .navbar ul{
+        font-size: 12px;
+        gap: 30px;
+    }
+    .navbar h1{
+        font-size: 28px;
+    }
+    .navbar ul li a .reg{
+        width: 80px;
+    }
+}
+
 
 /*Page Home*/
 #home{
@@ -131,6 +154,35 @@ a{
     font-size: 14px;
 }
 
+@media (max-width:770px){
+    .well{
+        font-size: 90px;
+    }
+    .well1{
+        font-size: 60px;
+    }
+    #home .show p{
+        font-size: 13px;
+    }
+    #home .show{
+        line-height: 35px;
+    }
+}
+@media (max-width:600px){
+    .well{
+        font-size: 80px;
+    }
+    .well1{
+        font-size: 50px;
+    }
+    #home .show p{
+        font-size: 12px;
+    }
+    #home .show{
+        line-height: 33px;
+    }
+}
+
 /*Page About*/
 #about{
     display: flex;
@@ -141,6 +193,7 @@ a{
     font-size: 14px;
     line-height: 1.4;
     color: #f1f1f1;
+    
 }
 #about .abinfo{
     padding: 40px;
@@ -150,8 +203,9 @@ a{
 }
 #about .imghtl img{
     float: left;
-    width: 420px;
-
+    width: 310px;
+    border-radius: 20%;
+    margin-right: 40px;
 }
 #about .text1{
     color: #f5971b;
